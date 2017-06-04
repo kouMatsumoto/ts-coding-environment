@@ -1,0 +1,9 @@
+# installed npm packages
+node_modules
+
+# config data of IntelliJ IDE
+.idea
+
+# ignore transpiled *.js and *.js.map files
+# **/*.js
+**/*.js.map
