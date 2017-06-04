@@ -1,9 +1,15 @@
 /**
- * input lines used to stdin in exec.ts
+ * a input lines array used to stdin in exec.ts
  *
- * @type {string[]}
+ * @type {string[][]}
  */
-export const INPUT_LINES: string[] = [
-  'first',
-  'second'
+export const INPUT_LINES: string[][] = [
+  [
+    '1-1',
+    '1-2'
+  ],
+  [
+    '2-1',
+    '2-2'
+  ],
 ];

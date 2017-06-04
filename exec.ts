@@ -1,11 +1,13 @@
 import { spawn } from 'child_process';
 import { INPUT_LINES } from './input-lines';
-const cp = spawn('node', ['./index.js']);
 
-cp.stdin.setDefaultEncoding('utf8');
-cp.stdout.pipe(process.stdout);
+INPUT_LINES.forEach(inputLines => executeNodeWithInputLines(inputLines));
 
-INPUT_LINES.forEach(line => cp.stdin.write(line + '\n'));
-cp.stdin.end();
+function executeNodeWithInputLines(inputLines: string[]) {
+  const cp = spawn('node', ['./index.js']);
+  cp.stdin.setDefaultEncoding('utf8');
+  cp.stdout.pipe(process.stdout);
 
-cp.on('exit', code => console.log('child exited with code:', code));
+  inputLines.forEach(line => cp.stdin.write(line + '\n'));
+  cp.stdin.end();
+}
