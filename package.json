@@ -19,9 +19,20 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
+    "@types/gulp": "^4.0.3",
+    "@types/gulp-mocha": "0.0.30",
+    "@types/gulp-sourcemaps": "0.0.30",
+    "@types/gulp-typescript": "^2.13.0",
     "@types/mocha": "^2.2.41",
     "@types/node": "^7.0.22",
+    "@types/run-sequence": "0.0.29",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.3.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-typescript": "^3.1.7",
     "mocha": "^3.4.2",
+    "run-sequence": "^1.2.2",
+    "ts-node": "^3.0.4",
     "tslint": "^5.3.2",
     "typescript": "^2.3.3"
   }
