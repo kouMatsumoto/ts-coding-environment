@@ -1,5 +1,3 @@
-process.openStdin();
-
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 let input_string = '';
