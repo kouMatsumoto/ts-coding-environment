@@ -8,11 +8,11 @@
     "npm": ">=4.2.0"
   },
   "scripts": {
-    "tsc": "tsc -p ./tsconfig.json",
-    "dev-tsc": "tsc -p ./tsconfig.json -w",
+    "tsc": "gulp tsc",
+    "develop": "gulp develop",
+    "unit-test": "gulp unit-test",
     "lint": "tslint -p ./tslint.json",
-    "unit-test": "mocha",
-    "generate-doc": "gulp typedoc"
+    "exec": "node exec.js"
   },
   "keywords": [],
   "author": "kouMatsumoto",
